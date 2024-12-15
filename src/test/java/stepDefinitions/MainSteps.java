@@ -51,4 +51,29 @@ public void card_are_displayed() {
     // Write code here that turns the phrase above into concrete actions
 	 System.out.println("Card are displayed");
 }
+
+@Given("setup the entries in database")
+public void setup_the_entries_in_database() {
+    // Write code here that turns the phrase above into concrete actions
+ System.out.println("*****************");
+ System.out.println("setup the entries in database");
+}
+
+@When("launch the browser from config variables")
+public void launch_the_browser_from_config_variables() {
+    // Write code here that turns the phrase above into concrete actions
+	 System.out.println("*****************");
+	 System.out.println("launch the browser from config variables");
+  
+}
+
+@When("hit the home page url of banking site")
+public void hit_the_home_page_url_of_banking_site() {
+    // Write code here that turns the phrase above into concrete actions
+	 System.out.println("*****************");
+	 System.out.println("hit the home page url of banking site");
+}
+
+
+
 }
