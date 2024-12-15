@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import java.util.List;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,11 +21,26 @@ public void user_is_not_net_banking_login_page() {
 //	 System.out.println("User login into application");
 //}
 
-@When("User login into application with {string} and password {string}")
+//@When("User login into application with {string} and password {string}")
+//public void user_login_into_application_with_and_password(String userName, String password) {
+//    // Write code here that turns the phrase above into concrete actions
+//   System.out.println(userName + " "+ password);
+//}
+
+
+@When("user enters the mentioned data")
+public void user_enters_the_mentioned_data(List <String> data) {
+	System.out.println("Data from the data tables is as mentioned: ");
+	System.out.println(data);
+}
+
+
+@When("^User login into application with (.+) and password (.+)$")
 public void user_login_into_application_with_and_password(String userName, String password) {
     // Write code here that turns the phrase above into concrete actions
    System.out.println(userName + " "+ password);
 }
+
 @Then("Home Page is displayed")
 public void home_page_is_displayed() {
     // Write code here that turns the phrase above into concrete actions
